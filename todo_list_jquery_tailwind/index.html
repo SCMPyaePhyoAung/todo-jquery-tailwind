@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="">
+  <div class="container bg-stone-50 mx-auto my-auto p-5 w-1/2 mt-20 shadow-md">
+    <h1 class="py-2 font-semibold">Todo</h1>
+    <form action="" id="todo-form">
+      <div class="flex py-3">
+        <div class="w-full">
+          <input type="text" name="todo" id="input" class="todo w-full border border-inherit">
+        </div>
+        <div class="w-auto mx-1">
+          <button type="submit" class="ml-auto text-medium font-bold bg-blue-500 text-white px-3 py-2 rounded"
+            id="btn-submit">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="filter-blk flex">
+        <span id="all"
+          class="mx-1 text-center font-medium bg-neutral-100 text-gray-500 px-3 py-2 rounded w-full active">All</span>
+        <span id="active"
+          class="mx-1 text-center font-medium bg-neutral-100 text-gray-500 px-3 py-2 rounded w-full">Active</span>
+        <span id="completed"
+          class="mx-1 text-center font-medium bg-neutral-100 text-gray-500 px-3 py-2 rounded w-full">Completed</span>
+      </div>
+      <ul class="resultList"></ul>
+      <h5 class="total text-gray-400"><span id="total"></span> items left</h5>
+    </form>
+    <div class="filter flex">
+      <button class="mx-1 text-medium font-medium bg-stone-100 text-gray-500 px-3 py-2 rounded w-full"
+        id="btn-checkall">Check All</button>
+      <button class="mx-1 text-medium font-medium bg-stone-100 text-gray-500 px-3 py-2 rounded w-full"
+        id="btn-deleteall">Clear Completed</button>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="jquery.js"></script>
+
+</html>
